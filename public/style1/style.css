@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: rgb(180, 180, 180);
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgb(255, 0, 0);
+}
+
+figure {
+    margin: 0px;
+}
+
+img {
+    margin: 20px 0 40px 0;
+}
+
+.contacts dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts dl dt {
+    width: 170px;
+    text-align: left;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    padding: 3px 0 3px 5px;
+}
+
+.contacts dl dd {
+    width: 82%;
+    text-align: left;
+    color: rgb(255, 0, 0);
+    padding: 3px 0 3px 5px;
+}
+
+.contacts dl dd a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+
+}
+
+#contact h3 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+    #contact {
+        position: absolute;
+        top: 0px;
+        right: -0px;
+        width: 40%;
+        text-align: left;
+    }
+
+    #contact h3 {
+        position: absolute;
+        top: -10000px;
+        margin-bottom: 50px;
+    }
+
+    .contacts dl dd {
+        background: #000;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin-left: 20%;
+        align-items: initial;
+        justify-content: space-evenly;
+        color: rgb(255, 0, 0);
+    }
+
+    figure {
+        margin: 1em 40px;
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+.content section h3::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 4px;
+}
+
+.content {
+    width: 90vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+.content section {
+    margin: 10px 0;
+}
+
+.content section h3 {
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.content section p {
+    margin-top: 20px;
+}
+
+.content section div h4 {
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    margin: 3px;
+}
+
+.content section div h4 span:nth-child(2) {
+    font-weight: 500;
+}
+
+.content section div h4 span:nth-child(2)::before {
+    content: "@";
+}
+
+#experiences {
+    margin-top: 40px;
+}
+
+.experience {
+    margin-top: 15px;
+}
+
+.experience-details {
+    color: rgb(180, 180, 180);
+    margin-left: 13px;
+
+}
+
+.experience-date-separator {
+    color: rgb(255, 0, 0);
+}
+
+@media (min-width: 1200px) {
+    .content {
+        width: 60%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 3% auto;
+    }
+
+    .content section {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .content section p {
+        width: 88%;
+        margin-top: 20px;
+    }
+
+    #experiences {
+        margin-top: 10px;
+    }
+}
+
+#hobbies ul {
+    margin: 3% 0 0 45px;
+}
+
+.skills {
+    margin-top: 3%;
+}
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+}
+
+.skill {
+    background: rgb(180, 180, 180);
+    display: block;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin: .5% 0;
+    padding: 5px;
+    padding-right: 0;
+}
+
+.skill[data-skill="5"] span {
+    padding-left: 5px;
+    background: rgb(255, 0, 0);
+    width: 50%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.skill[data-skill="3"] span {
+    padding-left: 5px;
+    background: rgb(255, 0, 0);
+    width: 30%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.skill[data-skill="1"] span {
+    padding-left: 5px;
+    background: rgb(255, 0, 0);
+    width: 10%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.skill[data-skill="9"] span {
+    padding-left: 5px;
+    background: rgb(255, 0, 0);
+    width: 90%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.skill[data-skill="7"] span {
+    padding-left: 5px;
+    background: rgb(255, 0, 0);
+    width: 70%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}

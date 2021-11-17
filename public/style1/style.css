@@ -1,3 +1,5 @@
+/* Body & HTML */
+
 * {
     padding: 0;
     margin: 0;
@@ -8,8 +10,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Header */
+
 header {
     background: rgb(180, 180, 180);
+    width: 100%;
 }
 
 header div {
@@ -28,6 +33,28 @@ figure {
 img {
     margin: 20px 0 40px 0;
 }
+
+@media (min-width: 1200px) {
+    header div {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin-left: 20%;
+        align-items: initial;
+        justify-content: space-evenly;
+        color: rgb(255, 0, 0);
+    }
+
+    figure {
+        margin: 1em 40px;
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+/* Contact */
 
 .contacts dl {
     display: flex;
@@ -80,25 +107,9 @@ img {
     .contacts dl dd {
         background: #000;
     }
-
-    header div {
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        margin-left: 20%;
-        align-items: initial;
-        justify-content: space-evenly;
-        color: rgb(255, 0, 0);
-    }
-
-    figure {
-        margin: 1em 40px;
-    }
-
-    img {
-        margin: 0;
-    }
 }
+
+/* Sections */
 
 .content section h3::before {
     content: "";
@@ -130,6 +141,7 @@ img {
 
 .content section p {
     margin-top: 20px;
+    text-align: justify;
 }
 
 .content section div h4 {
@@ -144,24 +156,6 @@ img {
 
 .content section div h4 span:nth-child(2)::before {
     content: "@";
-}
-
-#experiences {
-    margin-top: 40px;
-}
-
-.experience {
-    margin-top: 15px;
-}
-
-.experience-details {
-    color: rgb(180, 180, 180);
-    margin-left: 13px;
-
-}
-
-.experience-date-separator {
-    color: rgb(255, 0, 0);
 }
 
 @media (min-width: 1200px) {
@@ -183,15 +177,45 @@ img {
         width: 88%;
         margin-top: 20px;
     }
+}
 
+/* Experience */
+
+#experiences {
+    margin-top: 40px;
+}
+
+.experience {
+    margin-bottom: 50px;
+}
+
+.experience-details {
+    color: rgb(180, 180, 180);
+    margin-left: 13px;
+
+}
+
+.experience-description {
+    text-align: justify;
+}
+
+.experience-date-separator {
+    color: rgb(255, 0, 0);
+}
+
+@media (min-width: 1200px) {
     #experiences {
         margin-top: 10px;
     }
 }
 
+/* Hobbies */
+
 #hobbies ul {
     margin: 3% 0 0 45px;
 }
+
+/* Skills and Competencies */
 
 .skills {
     margin-top: 3%;
@@ -259,4 +283,20 @@ img {
     display: block;
     height: 30px;
     line-height: 30px;
+}
+
+@media (max-width: 920px) {
+
+    #competencies,
+    #experiences,
+    #about,
+    #hobbies,
+    #contact {
+        width: 100%;
+    }
+
+    header div {
+        margin-left: 0;
+        padding-left: 30px;
+    }
 }

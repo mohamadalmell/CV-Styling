@@ -137,16 +137,26 @@ section>div {
 }
 
 .experience-description {
-    text-align: left;
+    text-align: justify;
     float: left;
-
 }
 
 @media (max-width:920px) {
     #experiences h3 {
         height: fit-content;
     }
+
+    .experience-institution,
+    .experience-location {
+        display: none;
+    }
+
+    .experience {
+        margin-left: 0;
+    }
 }
+
+
 
 
 /* Contact */
@@ -215,13 +225,13 @@ section>div {
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        align-content: space-around;
-        width: 70vw;
+        align-content: space-between;
+        width: 100vw;
         margin: 1em 0 1em 1em;
     }
 
     .contact {
-        width: 33%;
+        width: 50%;
         padding-bottom: 3em;
     }
 }
